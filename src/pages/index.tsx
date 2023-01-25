@@ -14,7 +14,7 @@ const Index = () => {
           />
         }
       >
-        Career Connect
+        Career Connect | Job Search Portal
       </Main>
     </ChakraProvider>
   );
