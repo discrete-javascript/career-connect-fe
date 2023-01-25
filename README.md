@@ -1,7 +1,7 @@
-# Career Connect build on Next JS 13+, Tailwind CSS 3.2 and TypeScript
+# Career Connect build on Next JS 13+ and TypeScript
 
 
-🚀 Career Connect build on Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Netlify, PostCSS, Tailwind CSS.
+🚀 Career Connect build on Next.js and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Netlify, PostCSS, Tailwind CSS.
 
 ### Features
 
