@@ -3,6 +3,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
 
+// const APP_KEYS = {
+//   googleAuthApiKey: process.env.GOOGLE_AUTH_API_JSON,
+// };
+
 module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
@@ -14,4 +18,7 @@ module.exports = withBundleAnalyzer({
   // So, the source code is "basePath-ready".
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
+  publicRuntimeConfig: {
+    // APP_KEYS,
+  },
 });

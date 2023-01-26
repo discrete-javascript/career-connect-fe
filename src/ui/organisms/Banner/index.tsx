@@ -1,43 +1,21 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 
-import {
-  decrement,
-  increment,
-  incrementByAmount,
-  selectCount,
-} from '@/store/reducers';
+import type { IIndexProps } from '@/pages';
 import { useAppDispatch, useAppSelector } from '@/store/useStore';
 
-const Banner: React.FC = () => {
-  const dispatch = useAppDispatch();
-  const count = useAppSelector(selectCount);
-  const [incrementAmount, setIncrementAmount] = useState<number>(0);
+import { setJobLists } from '../../../store/actions/joblists';
 
-  return (
-    <>
-      <h1>Welcome to the greatest app in the world!</h1>
-      <h2>
-        The current number is
-        {count}
-      </h2>
-      <div>
-        <input
-          value={incrementAmount}
-          onChange={(e) => setIncrementAmount(Number(e.target.value))}
-          type="number"
-        />
-        <button
-          onClick={() => dispatch(incrementByAmount(Number(incrementAmount)))}
-        >
-          Increment by amount
-        </button>
-      </div>
-      <div>
-        <button onClick={() => dispatch(decrement())}>Decrement by 1</button>
-        <button onClick={() => dispatch(increment())}>Increment by 1</button>
-      </div>
-    </>
-  );
+const Banner: React.FC<IIndexProps> = ({ jobsListDetails }) => {
+  const dispatch = useAppDispatch();
+  const jobListing = useAppSelector((state) => state.jobLists);
+
+  console.log(jobListing);
+
+  useEffect(() => {
+    dispatch(setJobLists(jobsListDetails));
+  }, []);
+
+  return <>{JSON.stringify(jobListing)}</>;
 };
 
 export default Banner;

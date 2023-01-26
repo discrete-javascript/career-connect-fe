@@ -1,11 +1,11 @@
 import type { Action, ThunkAction } from '@reduxjs/toolkit';
 import { configureStore } from '@reduxjs/toolkit';
 
-import counterReducer from '@/store/reducers';
+import jobLists from '@/store/reducers';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    jobLists,
   },
 });
 

@@ -4,10 +4,15 @@ import { Provider } from 'react-redux';
 import { Meta } from '@/ui/layouts/Meta';
 import Banner from '@/ui/organisms/Banner';
 import { Main } from '@/ui/templates/Main';
+import { getSpreadSheetData } from '@/utils/googleUtility/spreadsheetValues';
 
 import { store } from '../store';
 
-const Index = () => {
+export interface IIndexProps {
+  jobsListDetails?: Array<object>;
+}
+
+const Index = ({ jobsListDetails }: IIndexProps) => {
   return (
     <Provider store={store}>
       <ChakraProvider>
@@ -20,11 +25,21 @@ const Index = () => {
           }
         >
           Career Connect | Job Search Portal
-          <Banner />
+          <Banner jobsListDetails={jobsListDetails} />
         </Main>
       </ChakraProvider>
     </Provider>
   );
 };
+
+export async function getServerSideProps() {
+  const jobListsDetailsFromGoogle = await getSpreadSheetData();
+
+  return {
+    props: {
+      jobsListDetails: jobListsDetailsFromGoogle,
+    },
+  };
+}
 
 export default Index;

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "career-connect-375906",
+  "private_key_id": "2bb9c437900a1ea2a71ef82dc57bca31f959982e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDQvpbOCi9AeeS2\nwxe6JNtRRpGfX1ncqWHlFl8x9dUqzEXiK8SAjbOTJIcGMYhyeI0+uZ4FeqjpkSPr\nDssP98XKI5Ek8YnC/VyvTnpAGf20c0DGXSaMe5o1TwYBw9ZStWGzKXR8m+OEiehu\n7VLT/ehDgQnQWfsGIu3GIwrhjHx6YQncjEzL2ax2edYLzMfl0eE9+fmSe1BFYBA7\nFw8htXox5RnYdwCmL3UqmMFuTyK6fGHIngGW+7nSaZ6pkxbmnTn4xEa95td6vCKX\nrinrcau/YWk0jSgotoNdDtfb2D2xiv/MIR51Zf7877+HhRrCFNMgTd+Z/e1HCCrf\nwBKp+SatAgMBAAECggEAA8k71FIxoopoxY/VoatYIanqq5NVKUAWkHXOwDSPQI7N\nQwQ8NNYHyHFvKYOYeqBedMwfu5sKmUHn/t7D0W79srmLwQ8dyorsisQc9NtZKKlh\nJrflzRfTfN1eudrNdlk9LmdgFNUsU+kUbX6hyUqKUz8ckx+EArZ7eDkxJ1TJpTE4\n+aGlRrqkeINtytBS+PYoZIgPiRre3bteaGQcz7eiXv/ldMyEFddnER/4zieDHS/p\nrDvENCqkmTOFaGDbT8PguiskqUmSXtF5mMD1JBFZOCMi16H1TAx47loLMBfHZUgL\nvcARkQRxM9ShHJb0GoIoM5V54ow4DbR3UleN4HLKWQKBgQD3RiVlz/tdH+VcHffK\na9prnYq0w3yXuQUFigJRmxHoyLDfKsUhc9q/wj44GXiNlWGolFoGcQqhKvAsWqt1\nKXLIn6PKkPVF4/vRKZi9oSBhs1frMPPK3Opw7UhWJ9dgiFl+vp9p8txdgMI5Rpuz\n9VG3h5vaOPVJ0RRobLe08IQB7wKBgQDYHF7PWzjK/05YIsmMxxykSOXZl3yAbEl+\nwTF78oOH8R1yF/LdrxEswEl3Np5QXSp5tgmYF/nVWXxUm/MKj4n1t6EYlUZag7BK\nofCLzN5LBOzaUBjy5zLOfX4ZStbn2DEj6hVzYPA97TXK6JjZNDnWcpKxF+4XM4HT\nEu8MmihNIwKBgA5vh+tjsvcCz68LCNZGaZ/yuJBJAVMSOBrUrcH53ZfLb5f3tT54\ntwKO4nb/9au+Vs8yqfbKTqaODStpt6zFWLAhsbw3rjoAT0kstoALkgpiH/XZC8KC\nFyW0lI6DEO3Px/nAQyo6RWcoBy600o40+ipOvmiE/rzqediG0Eq959b9AoGATR6a\nqs53zuEauRL477biPrIQ6/xGHqIF/Ci/GucpDur5QgzPy1I9A8Y+sT8Zcb49eR9/\n/vmXWw5K8vqP2ZXtenUkFNy4NXbHA2sUpx7duNGyIBnzPUNJ+ywHQslVNXkN2C4h\np4HRWZf72UP1v5UGisNqG65ZdYgY7RTVn56ngRcCgYAjcd2/kaMlScJthckPR8aK\nxph6mZSTA0p1LTiDT/qzRjXX+BykV0Ze1aX3dfPEaNN4KRiineFYcGoR0Z6Iercm\n1yfrO/3vflpP6X6WAk7fuuOZHJyH0rqeceGb+76fXfDFRYMxLJFHguE2uRYLTOPn\nJUessFEVwl2wegbLOHhnOg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "career-connect-service-account@career-connect-375906.iam.gserviceaccount.com",
+  "client_id": "114891126685073710165",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/career-connect-service-account%40career-connect-375906.iam.gserviceaccount.com"
+}
