@@ -22,6 +22,7 @@
     "target": "es5",
     "outDir": "out",
     "declaration": true,
+    "declarationDir": "./src/misc.d.ts",
     "sourceMap": true,
 
     "esModuleInterop": true,
@@ -38,7 +39,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/public/*": ["./public/*"]
+      "@/public/*": ["./public/*"],
+      "@/store/*": ["./src/store/*"]
     }
   },
   "exclude": ["./out/**/*", "./node_modules/**/*", "cypress/**/*.ts"],
