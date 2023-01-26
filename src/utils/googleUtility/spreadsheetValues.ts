@@ -3,8 +3,11 @@ import { getAuthToken, getSpreadSheetValues } from './googleServices';
 
 // Created the sheetname with link
 // Read more for to understand https://developers.google.com/sheets/api/guides/concepts#expandable-1
-const spreadsheetId = '1QJTbq7Yqy5z1CkNbs1FXbG8laWIdnskvNkauUQCXBnQ';
-const sheetName = 'Knowledge!10:20';
+const spreadsheetId =
+  typeof process.env.GOOGLE_SPREADSHEET_ID === 'string'
+    ? process.env.GOOGLE_SPREADSHEET_ID
+    : '';
+const sheetName = `${process.env.GOOGLE_SPREADSHEET_NAME}!10:20`;
 
 const getSpreadSheetData = async () => {
   try {

@@ -3,6 +3,13 @@
 
 🚀 Career Connect build on Next.js and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Netlify, PostCSS, Tailwind CSS.
 
+### Please create .env.local file and add these
+
+```shell
+GOOGLE_AUTH_SCOPE='https://www.googleapis.com/auth/spreadsheets'
+GOOGLE_SPREADSHEET_ID=1QJTbq7Yqy5z1CkNbs1FXbG8laWIdnskvNkauUQCXBnQ
+GOOGLE_SPREADSHEET_NAME=Knowledge
+
 ### Features
 
 Developer experience first:

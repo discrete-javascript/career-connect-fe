@@ -4,7 +4,13 @@ import { google } from 'googleapis';
 // check this link https://thenewstack.io/how-to-use-google-sheets-as-a-database-with-react-and-ssr/#:~:text=Search%20for%20%E2%80%9Csheets%E2%80%9D%20and%20select,the%20Application%20Data%20radio%20button.
 const sheets = google.sheets('v4');
 
-const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
+const SCOPES = [
+  `${
+    typeof process.env.GOOGLE_AUTH_SCOPE === 'string'
+      ? process.env.GOOGLE_AUTH_SCOPE
+      : ''
+  }`,
+];
 
 async function getAuthToken(): Promise<any> {
   const auth = new google.auth.GoogleAuth({
