@@ -34,7 +34,6 @@ Developer experience first:
 - 🗺️ Sitemap.xml and robots.txt with next-sitemap
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
 - 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
-- 🌈 Include a FREE minimalist theme
 - 💯 Maximize lighthouse score
 
 Built-in feature from Next.js:

@@ -7,7 +7,7 @@ const spreadsheetId =
   typeof process.env.GOOGLE_SPREADSHEET_ID === 'string'
     ? process.env.GOOGLE_SPREADSHEET_ID
     : '';
-const sheetName = `${process.env.GOOGLE_SPREADSHEET_NAME}!10:20`;
+const sheetName = `${process.env.GOOGLE_SPREADSHEET_NAME}!2:20`;
 
 const getSpreadSheetData = async () => {
   try {
@@ -17,12 +17,9 @@ const getSpreadSheetData = async () => {
       sheetName,
       auth,
     });
-    console.log(
-      'output for getSpreadSheetValues',
-      JSON.stringify(response.data, null, 2)
-    );
     return response.data;
   } catch (error: any) {
+    // eslint-disable-next-line no-console
     console.log(error);
     throw error;
   }

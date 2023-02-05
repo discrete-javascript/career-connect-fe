@@ -22,12 +22,21 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@google-cloud/local-auth": "^2.1.0",
+    "@mantine/carousel": "^5.10.3",
+    "@mantine/core": "^5.10.3",
+    "@mantine/dates": "^5.10.3",
+    "@mantine/hooks": "^5.10.3",
+    "@mantine/modals": "^5.10.3",
+    "@mantine/next": "^5.10.3",
+    "@mantine/notifications": "^5.10.3",
+    "@mantine/nprogress": "^5.10.3",
+    "@mantine/spotlight": "^5.10.3",
     "@redux-saga/core": "^1.2.2",
     "@reduxjs/toolkit": "^1.9.1",
+    "dayjs": "^1.11.7",
+    "embla-carousel-react": "^7.0.9",
     "framer-motion": "^8.5.2",
     "googleapis": "^105.0.0",
     "next": "^13.1.2",
@@ -36,7 +45,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",

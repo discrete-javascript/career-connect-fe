@@ -1,21 +1,29 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { MantineProvider } from '@mantine/core';
 import { Provider } from 'react-redux';
 
+import LandingPage from '@/ui/layouts/Landingpage';
 import { Meta } from '@/ui/layouts/Meta';
-import Banner from '@/ui/organisms/Banner';
+import type { Jobs } from '@/ui/molecules/Card/jobs.types';
 import { Main } from '@/ui/templates/Main';
 import { getSpreadSheetData } from '@/utils/googleUtility/spreadsheetValues';
 
 import { store } from '../store';
 
+export type JobsListDetails = Jobs;
 export interface IIndexProps {
-  jobsListDetails?: Array<object>;
+  jobsListDetails?: JobsListDetails;
 }
 
 const Index = ({ jobsListDetails }: IIndexProps) => {
   return (
     <Provider store={store}>
-      <ChakraProvider>
+      <MantineProvider
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          colorScheme: 'light',
+        }}
+      >
         <Main
           meta={
             <Meta
@@ -24,10 +32,9 @@ const Index = ({ jobsListDetails }: IIndexProps) => {
             />
           }
         >
-          Career Connect | Job Search Portal
-          <Banner jobsListDetails={jobsListDetails} />
+          <LandingPage jobsListDetails={jobsListDetails} />
         </Main>
-      </ChakraProvider>
+      </MantineProvider>
     </Provider>
   );
 };
