@@ -1,4 +1,6 @@
-import { Button, Container, createStyles, Text, Title } from '@mantine/core';
+import { Button, Container, createStyles, Text, Title, Modal, Group, Checkbox, TextInput } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { useForm } from '@mantine/form';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -74,8 +76,23 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
+
+
 export function HeroText() {
   const { classes } = useStyles();
+  const [opened, { open, close }] = useDisclosure(false);
+
+  const form = useForm({
+    initialValues: {
+      skills: 'All',
+      requiredYearsOfExeperience: 0,
+      location: 'All'
+    },
+
+    validate: {
+      requiredYearsOfExeperience: (value) => Number.isInteger(value) ? null : 'years of experience should be a number'
+    }
+  });
 
   return (
     <Container className={classes.wrapper} size={1400}>
@@ -106,9 +123,35 @@ export function HeroText() {
             size="lg"
             variant="default"
             color="gray"
+            onClick={open}
           >
-            Start Searching
+            Start Searchings
           </Button>
+          <Modal opened={opened} onClose={close} title="Filter By">
+        <TextInput
+          label="Skill"
+          placeholder="mention your core skill"
+          {...form.getInputProps('skills')}
+        />
+        <TextInput
+          
+          label="requiredYearsOfExeperience"
+          placeholder="years of experience"
+          {...form.getInputProps('requiredYearsOfExeperience')}
+        />
+        <TextInput
+          label="location"
+          placeholder="location"
+          {...form.getInputProps('location')}
+        />
+
+        
+
+        <Group position="right" mt="md">
+          <Button type="submit">Submit</Button>
+        </Group>
+ 
+          </Modal>
         </div>
       </div>
     </Container>
